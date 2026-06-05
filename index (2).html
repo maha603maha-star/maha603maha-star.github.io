@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Task Tracker</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <main class="app">
+    <section class="header">
+      <p>Web Development Internship · Task 2</p>
+      <h1>Daily Task Tracker</h1>
+      <h3 id="countText">0 tasks completed</h3>
+    </section>
+
+    <section class="todo-box">
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter your task">
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="pending">Pending</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="taskList"></ul>
+      <p id="emptyMsg">No tasks yet. Add your first task </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
